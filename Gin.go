@@ -26,7 +26,7 @@ func gingo(N int) {
 	starts := time.Now()
 	for i = 0; i < N; i++ {
 		go func() {
-			_, err := http.PostForm("http://localhost:9002/v1/add", url.Values{"name": {"canovaccio"}})
+			_, err := http.PostForm("http://localhost:9002/v1/add", url.Values{"name": {"prova"}})
 			if err != nil {
 				//handle postform error
 				log.Fatalln(err)
