@@ -28,7 +28,7 @@ func juliengo(N int) {
 	starts := time.Now()
 	for i = 0; i < N; i++ {
 		go func() {
-			_, err := http.PostForm("http://localhost:9001/v1/add", url.Values{"name": {"OK"}})
+			_, err := http.PostForm("http://localhost:9001/v1/add", url.Values{"name": {"prova"}})
 			if err != nil {
 				log.Fatalln(err)
 			}
